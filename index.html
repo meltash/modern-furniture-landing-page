@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Furniture | Transform Your Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-[Poppins] antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav class="max-w-8xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-12">
+                    <a href="#" class="flex items-center">
+                        <img src="logo.png" alt="Logo" class="h-10">
+                    </a>
+                    <!-- Desktop Navigation (hidden on mobile) -->
+                    <div class="hidden lg:flex items-center gap-8">
+                        <a href="#living-room" class="text-gray-700 hover:text-custom transition">Living Room</a>
+                        <a href="#bedroom" class="text-gray-700 hover:text-custom transition">Bedroom</a>
+                        <a href="#office" class="text-gray-700 hover:text-custom transition">Office</a>
+                        <a href="#dining" class="text-gray-700 hover:text-custom transition">Dining</a>
+                    </div>
+                </div>
+
+                <!-- Desktop Icons (hidden on mobile) -->
+                <div class="hidden lg:flex items-center gap-6">
+                    <div class="relative">
+                        <input type="text" placeholder="Search" class="w-64 pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 focus:ring-0 focus:border-custom">
+                        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <button class="text-gray-700 hover:text-custom transition">
+                            <i class="far fa-user text-xl"></i>
+                        </button>
+                        <button class="text-gray-700 hover:text-custom transition relative">
+                            <i class="far fa-heart text-xl"></i>
+                            <span class="absolute -top-1 -right-1 w-4 h-4 bg-custom text-white text-xs rounded-full flex items-center justify-center">2</span>
+                        </button>
+                        <button class="text-gray-700 hover:text-custom transition relative">
+                            <i class="fas fa-shopping-bag text-xl"></i>
+                            <span class="absolute -top-1 -right-1 w-4 h-4 bg-custom text-white text-xs rounded-full flex items-center justify-center">3</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button (visible on mobile) -->
+                <button class="lg:hidden text-gray-700 hover:text-custom transition" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu (hidden by default) -->
+            <div class="lg:hidden hidden bg-white py-4" id="mobile-menu">
+                <div class="flex flex-col gap-4">
+                    <a href="#living-room" class="text-gray-700 hover:text-custom transition">Living Room</a>
+                    <a href="#bedroom" class="text-gray-700 hover:text-custom transition">Bedroom</a>
+                    <a href="#office" class="text-gray-700 hover:text-custom transition">Office</a>
+                    <a href="#dining" class="text-gray-700 hover:text-custom transition">Dining</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[700px] bg-gray-100">
+            <img src="hero.jpg" alt="Modern Furniture" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="absolute inset-0 flex items-center">
+                <div class="max-w-8xl mx-auto px-6 w-full">
+                    <div class="max-w-2xl">
+                        <h1 class="font-['Playfair_Display'] text-6xl font-bold text-white mb-6">Transform Your Space with Modern Design</h1>
+                        <p class="text-lg text-white/90 mb-8">Discover our curated collection of premium furniture that combines style, comfort, and functionality.</p>
+                        <button class="!rounded-button bg-custom text-white px-8 py-4 text-lg font-medium hover:bg-custom/90 transition">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collections Section -->
+        <section id="living-room" class="py-20 bg-white">
+            <div class="max-w-8xl mx-auto px-6">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-center mb-16">Featured Collections</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="#living-room" class="group relative h-[400px] overflow-hidden">
+                        <img src="living room.jpg" alt="Living Room" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-2xl font-medium text-white mb-2">Living Room</h3>
+                            <p class="text-white/90">Shop Collection →</p>
+                        </div>
+                    </a>
+                    <a href="#bedroom" class="group relative h-[400px] overflow-hidden">
+                        <img src="bedroom.jpg" alt="Bedroom" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-2xl font-medium text-white mb-2">Bedroom</h3>
+                            <p class="text-white/90">Shop Collection →</p>
+                        </div>
+                    </a>
+                    <a href="#office" class="group relative h-[400px] overflow-hidden">
+                        <img src="office.jpg" alt="Office" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-2xl font-medium text-white mb-2">Office</h3>
+                            <p class="text-white/90">Shop Collection →</p>
+                        </div>
+                    </a>
+                    <a href="#dining" class="group relative h-[400px] overflow-hidden">
+                        <img src="dining.jpg" alt="Dining" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <h3 class="text-2xl font-medium text-white mb-2">Dining</h3>
+                            <p class="text-white/90">Shop Collection →</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bestsellers Section -->
+        <section id="bestsellers" class="py-20 bg-gray-50">
+            <div class="max-w-8xl mx-auto px-6">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-center mb-16">Bestsellers</h2>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="bg-white p-6">
+                                    <div class="relative group mb-6">
+                                        <img src="modern velvet sofa.jpg" alt="Modern Sofa" class="w-full h-[300px] object-cover">
+                                        <button class="!rounded-button absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-gray-900 px-6 py-2 opacity-0 group-hover:opacity-100 transition">Quick View</button>
+                                    </div>
+                                    <h3 class="text-lg font-medium mb-2">Modern Velvet Sofa</h3>
+                                    <div class="flex items-center justify-between">
+                                        <p class="text-custom font-medium">$1,299</p>
+                                        <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm hover:bg-custom/90 transition">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="bg-white p-6">
+                                    <div class="relative group mb-6">
+                                        <img src="modern dining table.jpg" alt="Dining Table" class="w-full h-[300px] object-cover">
+                                        <button class="!rounded-button absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-gray-900 px-6 py-2 opacity-0 group-hover:opacity-100 transition">Quick View</button>
+                                    </div>
+                                    <h3 class="text-lg font-medium mb-2">Modern Dining Table</h3>
+                                    <div class="flex items-center justify-between">
+                                        <p class="text-custom font-medium">$899</p>
+                                        <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm hover:bg-custom/90 transition">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="bg-white p-6">
+                                    <div class="relative group mb-6">
+                                        <img src="modern platform bed.jpg" alt="Platform Bed" class="w-full h-[300px] object-cover">
+                                        <button class="!rounded-button absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-gray-900 px-6 py-2 opacity-0 group-hover:opacity-100 transition">Quick View</button>
+                                    </div>
+                                    <h3 class="text-lg font-medium mb-2">Modern Platform Bed</h3>
+                                    <div class="flex items-center justify-between">
+                                        <p class="text-custom font-medium">$1,499</p>
+                                        <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm hover:bg-custom/90 transition">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6" data-glide-el="controls[nav]">
+                        <div class="flex justify-center gap-2">
+                            <button class="w-2 h-2 bg-gray-300 rounded-full" data-glide-dir="=0"></button>
+                            <button class="w-2 h-2 bg-gray-300 rounded-full" data-glide-dir="=1"></button>
+                            <button class="w-2 h-2 bg-gray-300 rounded-full" data-glide-dir="=2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Sections (Design Philosophy, Special Offer, Testimonials, Newsletter) -->
+        <!-- ... (rest of the sections remain unchanged) ... -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-8xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <img src="logo.png" alt="Logo" class="h-8 mb-6">
+                    <p class="text-gray-400">Transform your space with our curated collection of modern furniture.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-6">Categories</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#living-room" class="text-gray-400 hover:text-white transition">Living Room</a></li>
+                        <li><a href="#bedroom" class="text-gray-400 hover:text-white transition">Bedroom</a></li>
+                        <li><a href="#office" class="text-gray-400 hover:text-white transition">Office</a></li>
+                        <li><a href="#dining" class="text-gray-400 hover:text-white transition">Dining</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-6">Connect</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-pinterest-p text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Modern Furniture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Glide.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <script>
+        // Initialize Glide.js
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            gap: 32,
+            breakpoints: {
+                1024: {
+                    perView: 2
+                },
+                640: {
+                    perView: 1
+                }
+            }
+        }).mount();
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
