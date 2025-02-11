@@ -6,7 +6,7 @@ This project showcases a sleek, responsive landing page built using **HTML**, **
 
 
 > **Try it out!**  
-> View a live demo of the landing page [here](#) (Replace with your demo link).
+> View a live demo of the landing page [here](https://modern-furniture-landing-page.vercel.app/) .
 
 ---
 
